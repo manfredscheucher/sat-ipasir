@@ -6,7 +6,6 @@ A small collection of SAT modelling examples using **ipasirup** with both
 * **C++ (IPASIR + CaDiCaL/Glucose)**
 
 The goal is to provide minimal, reproducible *model enumeration* building blocks.
----
 
 ## Repository layout
 
