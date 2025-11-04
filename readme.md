@@ -60,7 +60,7 @@ If you are new to PySAT or want a quick refresher:
 
 ## IPASIR-UP Examples
 
-### 1) Enumerating k-subsets of {1..n}
+### 1) `ipasirup-ksubsets` : Enumerating k-subsets of {1..n} 
 
 We use `n` indicator variables (x_1, …, x_n). Both approaches return (\binom{n}{k}):
 
@@ -68,6 +68,6 @@ We use `n` indicator variables (x_1, …, x_n). Both approaches return (\binom{n
 * **`ksubset2` (conflict-driven):** when a conflict is reached (i.e., going beyond `k` true variables or beyond `n-k`false variables) add a clause to cut the branch. 
 
 
-### 2) Enumerating unlabeled graphs on n vertices
+### 2) `ipasirup-graphs` : Enumerating unlabeled graphs on n vertices
 
 We use an n-times-n adjacency matrix of indicator variables. The encoding follows the same conflict-driven idea as `ksubset2`, but with **lexicographic minimality** as a symmetry-breaking constraint. As soon as the partial assignment cannot remain lex-min, the branch is cut. The resulting counts match the number of non-isomorphic unlabeled n-vertex graphs [OEIS/A88](https://oeis.org/A88). 

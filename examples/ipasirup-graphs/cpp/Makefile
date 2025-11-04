@@ -4,8 +4,8 @@ CXX      ?= g++
 CXXFLAGS ?= -O2 -std=c++17
 CADICAL  ?= $(HOME)/github/cadical
 
-TARGET := ipasirup-graph2
-SRC    := ipasirup-graph2.cpp
+TARGET := ipasirup-graph
+SRC    := ipasirup-graph.cpp
 
 INCLUDES := -I"$(CADICAL)/src"
 LIBS     := "$(CADICAL)/build/ipasir.o" "$(CADICAL)/build/libcadical.a"
